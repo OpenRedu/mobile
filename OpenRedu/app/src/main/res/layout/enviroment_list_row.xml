@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/br.ufpe.cin.openredu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <android.view.WebCachedImageView
+        android:id="@+id/iv_thumbnail"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_margin="7dip"
+        app:placeHolder="@drawable/tn_enviroment" />
+  
+
+    <TextView
+        android:id="@+id/tv_environment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#36ACD5"
+        android:textSize="20dp" />
+
+</LinearLayout>

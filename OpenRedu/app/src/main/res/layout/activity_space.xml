@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vpi="http://schemas.android.com/apk/res/com.viewpagerindicator"
+    xmlns:app="http://schemas.android.com/apk/res/br.ufpe.cin.openredu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<br.ufpe.cin.openredu.widgets.ActionBar
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/action_bar"
+        app:title="Redu" />
+	
+    <!-- RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="HOME" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip" />
+
+        <RadioButton
+            android:id="@+id/rb_explorar"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="EXPLORAR" />
+
+        <RadioButton
+            android:id="@+id/rb_new_modules"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="NOVAS AULAS" />
+
+        <RadioButton
+            android:id="@+id/rb_last_saw_status"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ÚLTIMAS VISUALIZAÇÕES" />
+    </RadioGroup-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+		<com.viewpagerindicator.TitlePageIndicator
+            android:id="@+id/titles2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="22dip"
+            app:footerPadding="10dip"
+            app:footerColor="@color/blue"
+            app:footerIndicatorHeight="3dip"
+            app:footerIndicatorStyle="underline"
+            app:footerLineHeight="1dip"
+            app:selectedBold="false"
+            app:selectedColor="@color/blue"
+            app:titlePadding="80dip"
+            android:background="#F7F7F7" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp2"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="#FFF" />
+    </LinearLayout>
+
+</LinearLayout>

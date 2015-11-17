@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#C000">
+	
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:padding="5dp"
+	    android:layout_margin="50dp"
+	    android:layout_gravity="center"
+	    android:orientation="vertical" 
+	    android:gravity="center"
+	    android:background="#FFFFFF">
+	
+	    <TextView
+		    android:id="@+id/tvTitleUpload2"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:gravity="center"
+		    android:text="O que você deseja adicionar?"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:textColor="#999"
+		    android:textSize="12sp" />
+	    <View
+	        android:layout_width="wrap_content"
+	        android:layout_height="1dp"
+	        android:background="#f7f7f7" />
+	    <ListView 
+	        android:id="@+id/lvInsertFileFolder"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:divider="@drawable/img_divider"
+	        android:background="#fff"
+	        android:layout_weight="1"></ListView>
+	    
+	    <!-- <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+		    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:padding="5dp">
+	
+		    	<ImageView
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/ic_midia"
+		    	    android:layout_margin="7dp" />
+	
+		    	<View
+	                android:layout_height="fill_parent"
+	                android:layout_width="1dp"
+	                android:background="#f7f7f7" />
+		    	
+		    	<TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:padding="7dp"
+				    android:layout_margin="7dp"
+				    android:layout_weight="1"
+				    android:text="Arquivo de Apoio"
+				    android:textAppearance="?android:attr/textAppearanceLarge"
+				    android:textColor="#6D6E6F"
+				    android:textSize="12sp" />
+		    </LinearLayout>
+		    <View
+	                android:layout_width="wrap_content"
+	                android:layout_height="1dp"
+	                android:background="#f7f7f7" />
+		    <LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:padding="5dp">
+	
+		    	<ImageView
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:background="@drawable/ic_folder"
+		    	    android:layout_margin="7dp" />
+	
+		    	<View
+	                android:layout_height="fill_parent"
+	                android:layout_width="1dp"
+	                android:background="#f7f7f7" />
+		    	
+		    	<TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:padding="7dp"
+				    android:layout_weight="1"
+				    android:layout_margin="7dp"
+				    android:text="Pasta"
+				    android:textAppearance="?android:attr/textAppearanceLarge"
+				    android:textColor="#6D6E6F"
+				    android:textSize="12sp" />
+		    </LinearLayout>
+	        	
+	    </LinearLayout> -->
+	
+	</LinearLayout>
+</FrameLayout>

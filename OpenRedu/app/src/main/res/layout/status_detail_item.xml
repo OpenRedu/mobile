@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/br.ufpe.cin.openredu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cream"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <WebCachedImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            app:placeHolder="@drawable/default_thumbnail_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dip" >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fulaninho"
+                android:textColor="@color/gray_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:text="Há dois dias"
+                android:textColor="@color/gray_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="A menina tinha dois olhos ,um nariz e uma boca, mas pra nao ficar cansativo eu vou agora ter jons ahhblhBDA IBIBA IH AFSL BNHAKBHKSCB LAB KLBNibalhbfiab ibaj"
+        android:textColor="#000" />
+
+</LinearLayout>
