@@ -37,8 +37,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:19.1.0'
     compile 'com.android.support:support-v4:19.1.0'
     compile files('libs/buzzboxSDK-0.6.5.jar')
-    compile project(':openReduandroid')
-    compile project(':openReduMobileAndroidPushRefresh')
-    compile project(':openReduMobileViewPagerIndicator')
-    compile project(':openReduMobileWebCachedImageView')
+    compile project(':reduandroid')
+    compile project(':reduMobileAndroidPushRefresh')
+    compile project(':reduMobileViewPagerIndicator')
+    compile project(':reduMobileWebCachedImageView')
 }
