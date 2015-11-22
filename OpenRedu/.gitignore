@@ -1,17 +1,17 @@
 .gradle
+/.idea
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
 /OpenRedu.iml
 .DS_Store
 /build
 /captures
 /reduandroid/build/
 /reduandroid/reduandroid.iml
-/reduMobileAndroidPushRefresh/build/
 /reduMobileAndroidPushRefresh/reduMobileAndroidPushRefresh.iml
-/reduMobileViewPagerIndicator/build/
 /reduMobileViewPagerIndicator/reduMobileViewPagerIndicator.iml
-/reduMobileWebCachedImageView/build/
+/reduMobileViewPagerIndicator/build
+/reduMobileWebCachedImageView/build
+/reduMobileAndroidPushRefresh/build
+/reduandroid/build
 /reduMobileWebCachedImageView/reduMobileWebCachedImageView.iml
 
