@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divider_color">#E7E7E7</color>
+    <color name="gray_dark">#6D6E6F</color>
+    <color name="gray_light">#B2B2B2</color>
+    <color name="cream">#F7F7F7</color>
+    <color name="blue">#4CACD5</color>
+    <color name="orange">#FF7C35</color>
+</resources>

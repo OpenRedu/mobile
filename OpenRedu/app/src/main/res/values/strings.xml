@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OpenRedu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="pref_category_notifications_key">notifications</string>
+    <string name="pref_category_notifications_title">Notificações</string>
+    <string name="pref_category_environment_key">environment</string>
+    <string name="pref_category_environment_title">Ambientes</string>
+    <string name="activate_notifications_key">activate_notifications</string>
+    <string name="activate_notifications_title">Notificações</string>
+    <string name="activate_notifications_summary">Ative/desative as notificações</string>
+    <string name="when_answer_me_key">when_answer_me</string>
+    <string name="when_answer_me_title">Quando me respondem</string>
+    <string name="when_answer_me_summary">Em Comentários e Pedidos de Ajuda</string>
+    <string name="new_courses_key">new_courses</string>
+    <string name="new_courses_title">Novos Cursos</string>
+    <string name="new_courses_summary">Novos Cursos nos Ambientes que participo</string>
+<!--     <string name="new_spaces_key">new_spaces</string> -->
+<!--     <string name="new_spaces_title">Novas Disciplinas</string> -->
+<!--     <string name="new_spaces_summary">Novos Disciplinas nos Cursos que participo</string> -->
+    <string name="new_subject_key">new_subjects</string>
+    <string name="new_subject_title">Novos Módulos</string>
+    <string name="new_subject_summary">Novos Módulos nas Diciplinas que participo</string>
+    <string name="new_lectures_key">new_lectures</string>
+    <string name="new_lectures_title">Novas Aulas</string>
+    <string name="new_lectures_summary">Novas Aulas nas Disciplinas que participo</string>
+
+</resources>
