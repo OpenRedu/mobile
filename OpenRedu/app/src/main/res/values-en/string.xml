@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OpenRedu</string>
+    <string name="menu_settings">Settings</string>
+    <!-- Preferences labels -->
+    <string name="pref_category_notifications_key">notifications</string>
+    <string name="pref_category_notifications_title">Notifications</string>
+    <string name="pref_category_environment_key">environment</string>
+    <string name="pref_category_environment_title">Environment</string>
+    <!-- Notifications keys -->
+    <string name="activate_notifications_key">activate_notifications</string>
+    <string name="activate_notifications_title">Notifications</string>
+    <string name="activate_notifications_summary">Activate/Deactivate notification</string>
+
+    <string name="when_answer_me_key">when_answer_me</string>
+    <string name="when_answer_me_title">When answer me</string>
+    <string name="when_answer_me_summary">In comments and requests for help</string>
+
+    <string name="new_courses_key">new_courses</string>
+    <string name="new_courses_title">New courses</string>
+    <string name="new_courses_summary">New Courses at the Environment in which I have participated</string>
+<!--     <string name="new_spaces_key">new_spaces</string> -->
+<!--     <string name="new_spaces_title">New Disciplines</string> -->
+<!--     <string name="new_spaces_summary">New Disciplines in the Courses in which I have participated</string> -->
+    <string name="new_subject_key">new_subjects</string>
+    <string name="new_subject_title">New Subjects</string>
+    <string name="new_subject_summary">New Subjects at the Disciplines in which I have participated</string>
+    <string name="new_lectures_key">new_lectures</string>
+    <string name="new_lectures_title">New Lectures</string>
+    <string name="new_lectures_summary">New Lectures at the Disciplines in which I have participated</string>
+
+</resources>
