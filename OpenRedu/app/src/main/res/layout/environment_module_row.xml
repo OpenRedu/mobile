@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="@drawable/img_divider" />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fff"
+    >
+
+		<TextView
+		    android:id="@+id/tvSuject"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="top"
+		    android:layout_marginLeft="32dp"
+		    android:padding="10dp"
+		    android:text="Módulo Modularização"
+		    android:textAppearance="?android:attr/textAppearanceLarge"
+		    android:textColor="#36ACD5"
+		    android:textSize="16sp" />
+		
+		<ImageView 
+		    android:id="@+id/iv_add"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:background="@drawable/bg_action_button"
+		    android:padding="5dp"
+		    android:src="@drawable/ic_add2"
+		    android:visibility="gone"/>
+		<ImageView 
+		    android:id="@+id/iv_info"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:background="@drawable/bg_action_button"
+		    android:padding="5dp"
+		    android:src="@drawable/ic_info"/>
+
+		<!-- <ImageView 
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:padding="5dp"
+ 		    android:src="@drawable/ic_seta"/> -->
+	</LinearLayout>
+	
+
+</LinearLayout>

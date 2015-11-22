@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/bt_ask_help"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_bottom_gray"
+        android:text="Pedir ajuda"
+        android:textColor="@color/orange"
+        android:textSize="16dip" />
+
+    <Button
+        android:id="@+id/bt_comment"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_bottom_gray"
+        android:text="Comentar"
+        android:textColor="@color/blue"
+        android:textSize="16dip" />
+
+</LinearLayout>

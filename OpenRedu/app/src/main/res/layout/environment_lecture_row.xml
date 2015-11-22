@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llLectureRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fff">
+    <android.widget.LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:duplicateParentState="true"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/bg_gray">
+    
+    <TextView 
+	    android:id="@+id/tvOrdering"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:layout_marginLeft="5dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="#cccccc"
+	    android:textSize="12sp" />
+    
+    <ImageView 
+        android:id="@+id/ivLecture"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/ic_page" 
+	    android:layout_gravity="center_vertical" />
+    
+    <TextView 
+	    android:id="@+id/tvLecturesName"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	    android:text="Java Modularizado"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="#36ACD5"
+	    android:textSize="14sp" />
+    
+    <!-- <ImageView 
+        android:id="@+id/ivIsFinalized"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:src="@drawable/ic_finished"/> -->
+
+</android.widget.LinearLayout>
+</LinearLayout>

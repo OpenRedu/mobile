@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OpenRedu.iml" filepath="$PROJECT_DIR$/OpenRedu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reduMobileAndroidPushRefresh/reduMobileAndroidPushRefresh.iml" filepath="$PROJECT_DIR$/reduMobileAndroidPushRefresh/reduMobileAndroidPushRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reduMobileViewPagerIndicator/reduMobileViewPagerIndicator.iml" filepath="$PROJECT_DIR$/reduMobileViewPagerIndicator/reduMobileViewPagerIndicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reduMobileWebCachedImageView/reduMobileWebCachedImageView.iml" filepath="$PROJECT_DIR$/reduMobileWebCachedImageView/reduMobileWebCachedImageView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reduandroid/reduandroid.iml" filepath="$PROJECT_DIR$/reduandroid/reduandroid.iml" />
+    </modules>
+  </component>
+</project>
