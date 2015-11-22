@@ -1,0 +1,10 @@
+int attr memoryPercentToUse 0x7f010001
+int attr mode 0x7f010000
+int attr placeHolder 0x7f010002
+int id disk 0x7f020002
+int id memory 0x7f020001
+int id no_cache 0x7f020000
+int[] styleable WebCachedImageView { 0x7f010000, 0x7f010001, 0x7f010002 }
+int styleable WebCachedImageView_memoryPercentToUse 1
+int styleable WebCachedImageView_mode 0
+int styleable WebCachedImageView_placeHolder 2

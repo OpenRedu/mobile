@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@color/gray_light"
+    android:listSelector="@drawable/popup_menu_list_selector"
+    android:background="#FFF"
+    android:scrollingCache="false"
+    android:overScrollMode="never"
+    android:dividerHeight="1dip" />
