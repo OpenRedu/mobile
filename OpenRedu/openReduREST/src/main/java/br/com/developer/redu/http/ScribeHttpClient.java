@@ -40,7 +40,7 @@ public class ScribeHttpClient extends HttpClient {
 	}
 
 	private void initOauth() {
-		this.service = new ServiceBuilder().provider(ReduOauth2.class).apiKey(this.consumerKey).apiSecret(this.consumerSecret).callback("").build();
+		this.service = new ServiceBuilder().provider(ReduOAuth2.class).apiKey(this.consumerKey).apiSecret(this.consumerSecret).callback("").build();
 
 	}
 

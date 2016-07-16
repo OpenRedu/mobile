@@ -51,7 +51,7 @@ import com.google.gson.Gson;
 public abstract class ReduClient<A,B,C,D,E,F,G,H,I,J,L,M,N> implements Redu<A,B,C,D,E,F,G,H,I,J,L,M,N> {
 
     private HttpClient httpClient;
-    private final String BASE_URL="http://www.redu.com.br/api/";
+    private final String BASE_URL="http://ead.openredu.com/api/";
     private Gson gson;
 
     protected Type userList;

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import br.com.developer.redu.DefaultReduClient;
@@ -32,20 +33,19 @@ public class LoginWebViewActivity extends BaseActivity {
 			mWebView = (WebView) findViewById(R.id.webview);
 			mWebView.getSettings().setJavaScriptEnabled(true);
 			mWebView.addJavascriptInterface(new MyJavaScriptInterface(), "HTMLOUT");
-	
 			mWebView.setWebViewClient(new WebViewClient() {
 				@Override
 				public void onPageStarted(WebView view, String url, Bitmap favicon) {
-				//	if (url.equals("http://www.redu.com.br/oauth/authorize")) {
+					if (url.equals("http://ead.openredu.com/oauth/authorize")) {
 						showProgressDialog("Aguarde alguns instantes enquanto você é redirecionado ao aplicativo Redu Mobile…", false);
-				//	}
+					}
 				}
 				@Override
 				public void onPageFinished(WebView view, String url) {
 					// This call inject JavaScript into the page which just finished loading.
-				//	if (url.equals("http://www.redu.com.br/oauth/authorize")) {
+					if (url.equals("http://ead.openredu.com/oauth/authorize")) {
 						mWebView.loadUrl("javascript:window.HTMLOUT.processHTML(document.getElementsByTagName('code')[0].innerHTML);");
-				//	}
+					}
 				}
 			});
 	
@@ -57,7 +57,7 @@ public class LoginWebViewActivity extends BaseActivity {
 				}
 				@Override
 				protected void onPostExecute(String authorizeUrl) {
-					mWebView.loadUrl(authorizeUrl);			
+					mWebView.loadUrl(authorizeUrl);
 				}
 			}.execute();
 		}
@@ -65,6 +65,7 @@ public class LoginWebViewActivity extends BaseActivity {
 
 	// An instance of this class will be registered as a JavaScript interface
 	class MyJavaScriptInterface {
+		@JavascriptInterface
 		public void processHTML(String pinCode) {
 			new AsyncTask<Void, Void, Void>() {
 				@Override

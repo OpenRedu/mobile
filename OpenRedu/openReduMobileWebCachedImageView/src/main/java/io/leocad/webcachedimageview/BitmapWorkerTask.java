@@ -105,7 +105,7 @@ public class BitmapWorkerTask extends AsyncTask<Object, Void, Bitmap> {
 	}
 	
 	private static InputStream fetchStream(String urlString) throws IllegalStateException, IOException {
-		
+		urlString = "http://ead.openredu.com" + urlString;
 		DefaultHttpClient httpClient = new DefaultHttpClient();
 		HttpGet request = new HttpGet(urlString);
 		HttpResponse response = httpClient.execute(request);

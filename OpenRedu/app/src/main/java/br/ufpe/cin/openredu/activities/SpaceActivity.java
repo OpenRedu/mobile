@@ -149,7 +149,7 @@ public class SpaceActivity extends DbHelperHolderActivity {
 	@Override
 	public void onResume() {
 		super.onResume();
-		mAdapter.notifyDataSetChanged();
+		if (mAdapter != null) mAdapter.notifyDataSetChanged();
 	}
 
 	class MainAdapter extends FragmentStatePagerAdapter {

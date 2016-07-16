@@ -78,7 +78,7 @@ public class LectureActivity extends BaseActivity {
 		mTvSubject = (TextView) findViewById(R.id.tv_title_action_bar);
 		mTvLecture = (TextView) findViewById(R.id.tvLecture);
 		String role = UserHelper.getUserRoleInCourse(this);
-		if (role.equals("teacher") || role.equals("environment_admin")) {
+		if (role != null && (role.equals("teacher") || role.equals("environment_admin"))) {
 			mBtRemove = (Button) findViewById(R.id.btRemove);
 			mBtRemove.setVisibility(View.VISIBLE);
 
