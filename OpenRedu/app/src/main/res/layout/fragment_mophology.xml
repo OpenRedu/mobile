@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <android.widget.Button
+        android:id="@+id/btNovoModulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_gray"
+        android:text="Novo Módulo"
+        android:textColor="@color/blue"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@drawable/img_divider" />
+
+    <ExpandableListView
+        android:id="@+id/elvSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:divider="@null"
+        android:visibility="gone" >
+    </ExpandableListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@drawable/img_divider" />
+
+    <FrameLayout
+        android:id="@+id/no_connection_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+        
+        <TextView
+            android:id="@+id/elv_subject_empyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Esta Disciplina está vazia, será necessário adicionar o um Novo Módulo antes."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray_light"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

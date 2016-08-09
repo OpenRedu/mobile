@@ -1,0 +1,5 @@
+include ':app'
+include ':openReduMobileAndroidPushRefresh'
+include ':openReduMobileViewPagerIndicator'
+include ':openReduREST'
+include ':openReduMobileWebCachedImageView'

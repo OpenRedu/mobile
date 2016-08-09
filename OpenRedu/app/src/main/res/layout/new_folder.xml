@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/br.ufpe.cin.openredu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <br.ufpe.cin.openredu.widgets.ActionBar
+            android:id="@+id/actionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/action_bar"
+            app:title="Módulo Sit Amet" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        
+
+        <ImageView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_folder" />
+
+        <EditText
+            android:id="@+id/etFolder"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Digite aqui o nome da aula..."
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="12sp" >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

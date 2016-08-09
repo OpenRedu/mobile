@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dip"
+    android:background="#A000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:padding="10dip"
+        android:text="Problemas na conexão!"
+        android:textColor="#FFF"
+        android:drawableLeft="@drawable/ic_no_connection"
+        android:drawablePadding="10dip"
+        android:textStyle="bold" />
+
+</LinearLayout>
