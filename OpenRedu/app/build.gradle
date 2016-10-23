@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 19
@@ -6,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "br.ufpe.cin.openredu"
-        minSdkVersion 10
+        minSdkVersion 16
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
@@ -29,6 +30,9 @@ android {
         exclude 'META-INF/dependencies.txt'
         exclude 'META-INF/LGPL2.1'
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 
 dependencies {
@@ -41,4 +45,8 @@ dependencies {
     compile project(':openReduMobileAndroidPushRefresh')
     compile project(':openReduMobileViewPagerIndicator')
     compile project(':openReduMobileWebCachedImageView')
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

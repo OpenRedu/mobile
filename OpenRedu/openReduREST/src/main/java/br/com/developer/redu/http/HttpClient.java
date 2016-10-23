@@ -16,10 +16,17 @@ import br.com.developer.redu.models.Lecture;
 public abstract class HttpClient {
     protected String consumerKey;
     protected String consumerSecret;
+    protected String callbackURL;
 
-    public HttpClient(String consumerKey, String consumerSecret){
+    public HttpClient(String consumerKey, String consumerSecret) {
         this.consumerKey = consumerKey;
         this.consumerSecret = consumerSecret;
+    }
+
+    public HttpClient(String consumerKey, String consumerSecret, String callbackURL) {
+        this.consumerKey = consumerKey;
+        this.consumerSecret = consumerSecret;
+        this.callbackURL = callbackURL;
     }
 
     public abstract void initClient(String accessToken);
@@ -39,6 +46,5 @@ public abstract class HttpClient {
 	public abstract String postMedia(String url, Lecture lecture, java.io.File file, Entry<String, String>[] params) throws IOException;
 	
 	public abstract String postMedia(String url, java.io.File file, Entry<String, String>[] params) throws IOException;
-
 }
 

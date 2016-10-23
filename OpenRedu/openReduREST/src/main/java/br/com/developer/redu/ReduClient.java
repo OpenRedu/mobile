@@ -87,10 +87,10 @@ public abstract class ReduClient<A,B,C,D,E,F,G,H,I,J,L,M,N> implements Redu<A,B,
         this.gson = new Gson();
         this.httpClient = new ScribeHttpClient(consumerKey, consumerSecret);
     }
-    public ReduClient(String consumerKey, String consumerSecret, String pin){
+    public ReduClient(String consumerKey, String consumerSecret, String callbackURL){
         this.initTypes();
         this.gson = new Gson();
-        this.httpClient = new ScribeHttpClient(consumerKey,consumerSecret,pin);
+        this.httpClient = new ScribeHttpClient(consumerKey, consumerSecret, callbackURL);
     }
 
     public String getAuthorizeUrl(){

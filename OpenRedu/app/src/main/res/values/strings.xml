@@ -20,9 +20,9 @@
     <string name="new_courses_key">new_courses</string>
     <string name="new_courses_title">Novos Cursos</string>
     <string name="new_courses_summary">Novos Cursos nos Ambientes que participo</string>
-<!--     <string name="new_spaces_key">new_spaces</string> -->
-<!--     <string name="new_spaces_title">Novas Disciplinas</string> -->
-<!--     <string name="new_spaces_summary">Novos Disciplinas nos Cursos que participo</string> -->
+    <!--     <string name="new_spaces_key">new_spaces</string> -->
+    <!--     <string name="new_spaces_title">Novas Disciplinas</string> -->
+    <!--     <string name="new_spaces_summary">Novos Disciplinas nos Cursos que participo</string> -->
     <string name="new_subject_key">new_subjects</string>
     <string name="new_subject_title">Novos Módulos</string>
     <string name="new_subject_summary">Novos Módulos nas Diciplinas que participo</string>

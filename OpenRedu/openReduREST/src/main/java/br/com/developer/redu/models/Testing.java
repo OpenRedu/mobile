@@ -14,12 +14,12 @@ import br.com.developer.redu.DefaultReduClient;
 public class Testing {
     public static void main(String[] args){
 
-        DefaultReduClient redu = new DefaultReduClient("yourconsumerkey", "yoursecretkey");
+        /*DefaultReduClient redu = new DefaultReduClient("yourconsumerkey", "yoursecretkey");
         Scanner in = new Scanner(System.in);
         System.out.println("Visit this url: "+redu.getAuthorizeUrl());
         System.out.println("Enter your pin:");
         String pin = in.nextLine();
         redu.initClient(pin);
-        System.out.println(redu.getMe());
+        System.out.println(redu.getMe());*/
     }
 }

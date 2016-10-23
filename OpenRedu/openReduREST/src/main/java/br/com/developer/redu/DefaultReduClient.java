@@ -31,8 +31,8 @@ public class DefaultReduClient extends ReduClient<Course, Enrollment, Environmen
     public DefaultReduClient(String consumerKey, String consumerSecret) {
         super(consumerKey, consumerSecret);
     }
-    public DefaultReduClient(String consumerKey, String consumerSecret, String pin){
-        super(consumerKey, consumerSecret, pin);
+    public DefaultReduClient(String consumerKey, String consumerSecret, String callbackURL){
+        super(consumerKey, consumerSecret, callbackURL);
     }
     
     @Override

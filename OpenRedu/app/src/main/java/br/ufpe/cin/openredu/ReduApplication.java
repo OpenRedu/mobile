@@ -10,7 +10,6 @@ import br.com.developer.redu.models.User;
 import br.ufpe.cin.openredu.util.PinCodeHelper;
 
 public class ReduApplication extends Application {
-
 	static private DefaultReduClient reduClientInitialized;
 	static private User user;
 
@@ -21,12 +20,14 @@ public class ReduApplication extends Application {
 		
 		String consumerKey = context.getString(R.string.CONSUMER_KEY);
 		String consumerSecretKey = context.getString(R.string.CONSUMER_SECRET_KEY);
+		String callbackURL = "openredu://mobile";
 		
-		DefaultReduClient reduClient = new DefaultReduClient(consumerKey, consumerSecretKey);
+		DefaultReduClient reduClient = new DefaultReduClient(consumerKey, consumerSecretKey, callbackURL);
 			
 		String pinCode = PinCodeHelper.get(context);
 		if(pinCode != null) {
-			reduClient.initClient(pinCode);
+			// TODO: Trocar para a nova lógica de captura do access token
+			//reduClient.initClient(pinCode);
 			reduClientInitialized = reduClient;
 		}
 		

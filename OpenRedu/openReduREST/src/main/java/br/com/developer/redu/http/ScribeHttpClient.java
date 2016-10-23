@@ -25,23 +25,22 @@ import br.com.developer.redu.models.Lecture;
  */
 public class ScribeHttpClient extends HttpClient {
 	private OAuthService service;
-	private Token accesToken;
+	private Token accessToken;
 
 	public ScribeHttpClient(String consumerKey, String consumerSecret) {
 		super(consumerKey, consumerSecret);
-		this.initOauth();
 
+		this.initOauth();
 	}
 
-	public ScribeHttpClient(String consumerKey, String consumerSecret, String pin) {
-		super(consumerKey, consumerSecret);
+	public ScribeHttpClient(String consumerKey, String consumerSecret, String callbackURL) {
+		super(consumerKey, consumerSecret, callbackURL);
+
 		this.initOauth();
-		this.accesToken = this.service.getAccessToken(null, new Verifier(pin));
 	}
 
 	private void initOauth() {
-		this.service = new ServiceBuilder().provider(ReduOAuth2.class).apiKey(this.consumerKey).apiSecret(this.consumerSecret).callback("").build();
-
+		service = new ServiceBuilder().provider(ReduOauth2.class).apiKey(consumerKey).apiSecret(consumerSecret).callback(callbackURL).build();
 	}
 
 	private void addUrlParams(OAuthRequest request, Map.Entry<String, String>... params) {
@@ -61,7 +60,7 @@ public class ScribeHttpClient extends HttpClient {
 	@Override
 	public void initClient(String pin) {
 		Verifier v = new Verifier(pin);
-		this.accesToken = this.service.getAccessToken(null, v);
+		this.accessToken = this.service.getAccessToken(null, v);
 	}
 
 	@Override
@@ -75,7 +74,7 @@ public class ScribeHttpClient extends HttpClient {
 		if (params != null) {
 			this.addUrlParams(request, params);
 		}
-		this.service.signRequest(this.accesToken, request);
+		this.service.signRequest(this.accessToken, request);
 		Response r = request.send();
 		return r.getBody();
 	}
@@ -86,7 +85,7 @@ public class ScribeHttpClient extends HttpClient {
 		if (params != null) {
 			this.addBodyParams(request, params);
 		}
-		this.service.signRequest(this.accesToken, request);
+		this.service.signRequest(this.accessToken, request);
 		Response r = request.send();
 		return r.getBody(); // To change body of implemented methods use File |
 							// Settings | File Templates.
@@ -102,7 +101,7 @@ public class ScribeHttpClient extends HttpClient {
 		request.addPayload(payload);
 
 		request.addHeader("Content-Type", "application/json");
-		this.service.signRequest(this.accesToken, request);
+		this.service.signRequest(this.accessToken, request);
 		Response r = request.send();
 		return r.getBody();
 	}
@@ -114,12 +113,12 @@ public class ScribeHttpClient extends HttpClient {
 		Log.i("FileNAME", file.getAbsolutePath());
 		Log.i("FileNAME", file.getCanonicalPath());
 		Log.i("FileNAME", file.getParent());
-		Log.i("TOKEN", this.accesToken.getToken());
+		Log.i("TOKEN", this.accessToken.getToken());
 
 		entity.addPart("lecture[media]", file, URLConnection.guessContentTypeFromName(file.getName()));
 		entity.addPart("lecture[name]", lecture.name);
 		entity.addPart("lecture[type]", lecture.type);
-		MultipartRequest request = new MultipartRequest(url, this.accesToken.getToken());
+		MultipartRequest request = new MultipartRequest(url, this.accessToken.getToken());
 		request.setEntity(entity);
 		Response r = request.send();
 		if (r.getCode() != 201){
@@ -133,7 +132,7 @@ public class ScribeHttpClient extends HttpClient {
 	public String postMedia(String url, java.io.File file, Map.Entry<String, String>... params) throws IOException {
 		Entity entity = new Entity();
 		entity.addPart("file[content]", file, URLConnection.guessContentTypeFromName(file.getName()));
-		MultipartRequest request = new MultipartRequest(url, this.accesToken.getToken());
+		MultipartRequest request = new MultipartRequest(url, this.accessToken.getToken());
 		request.setEntity(entity);
 		Response r = request.send();
 		if (r.getCode() != 201){
@@ -149,7 +148,7 @@ public class ScribeHttpClient extends HttpClient {
 		if (params != null) {
 			this.addUrlParams(request, params);
 		}
-		this.service.signRequest(this.accesToken, request);
+		this.service.signRequest(this.accessToken, request);
 		Response r = request.send();
 		if (!(r.getCode() == 204)) {
 			throw new DeleteException("Invalid return code", r.getCode());
@@ -164,7 +163,7 @@ public class ScribeHttpClient extends HttpClient {
 		}
 		request.addPayload(payload);
 		request.addHeader("Content-Type", "application/json");
-		this.service.signRequest(this.accesToken, request);
+		this.service.signRequest(this.accessToken, request);
 		Response r = request.send();
 		if (!(r.getCode() == 204)) {
 			throw new PutException("Invalid return code", r.getCode());

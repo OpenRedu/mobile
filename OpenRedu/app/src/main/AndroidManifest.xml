@@ -1,7 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="br.ufpe.cin.openredu">
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="16" />
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufpe.cin.openredu">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -15,101 +14,93 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.LoginWebViewActivity"
-            android:screenOrientation="portrait" >
+            android:name=".activities.LoginActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="openredu"
+                    android:host="mobile" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activities.HomeActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.EnvironmentActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.SpaceActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.StatusDetailActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.LectureWallActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.PostStatusOnSpaceWallActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.PostStatusOnLectureWallActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.SettingsActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.LectureActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.lecture.UploadFileFolderActivity"
             android:configChanges="orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activities.lecture.UploadStep1Activity"
             android:configChanges="orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activities.lecture.UploadStep2Activity"
             android:configChanges="orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activities.lecture.UploadStep3Activity"
             android:configChanges="orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".activities.lecture.NewFolderActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.NewModuleActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activities.WebViewActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
 
         <!-- BuzzBox -->
-        <receiver android:name="com.buzzbox.mob.android.scheduler.SchedulerReceiver" >
+        <receiver android:name="com.buzzbox.mob.android.scheduler.SchedulerReceiver">
             <intent-filter>
                 <action android:name="com.buzzbox.mob.android.scheduler.wakeup" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -122,5 +113,4 @@
 
         <service android:name="com.buzzbox.mob.android.scheduler.ScheduledService" />
     </application>
-
 </manifest>

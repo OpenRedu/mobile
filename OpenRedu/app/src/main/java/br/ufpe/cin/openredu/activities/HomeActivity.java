@@ -118,7 +118,7 @@ public class HomeActivity extends DbHelperHolderActivity {
 					i.putExtra(WebViewActivity.EXTRAS_URL, "http://www.redu.com.br/paginas/politica_privacidade");
 					break;
 				case 3:
-					i = new Intent(getApplicationContext(), LoginWebViewActivity.class);
+					i = new Intent(getApplicationContext(), LoginActivity.class);
 					i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 					
 					ReduApplication.clear(getApplicationContext());
