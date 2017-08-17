@@ -14,9 +14,9 @@ import org.scribe.model.OAuthConfig;
 import org.scribe.model.Verb;
 import org.scribe.utils.OAuthEncoder;
 
-public class ReduOAuth2 extends DefaultApi20 {
+public class ReduOauth2 extends DefaultApi20 {
 
-    private static final String AUTHORIZE_URL = "http://ead.openredu.com/oauth/authorize?client_id=%s";
+    private static final String AUTHORIZE_URL = "http://openredu.cin.ufpe.br/oauth/authorize?client_id=%s";
 
     @Override
     public Verb getAccessTokenVerb() {
@@ -25,7 +25,7 @@ public class ReduOAuth2 extends DefaultApi20 {
 
     @Override
     public String getAccessTokenEndpoint() {
-        return "http://ead.openredu.com/oauth/token?grant_type=authorization_code";
+        return "http://openredu.cin.ufpe.br/oauth/token?grant_type=authorization_code";
     }
 
     @Override

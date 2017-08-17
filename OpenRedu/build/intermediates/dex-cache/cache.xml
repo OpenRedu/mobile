@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\openReduREST\build\intermediates\bundles\default\libs\commons-codec-1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="552cd54385c88e92eeb4bbb619a94a5c883d72ab">
+        <dex dex="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\transforms\dex\debug\folders\1000\8\commons-codec-1.6_5c8350627debc44fe14a2a0949867374b0e83541\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="be9af11ff9db72027f17c61abf60c05e6d0d7d9f">
+        <dex dex="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_972faf460eb86b2f634247376bf01f13d9855beb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\libs\buzzboxSDK-0.6.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6fec494299c332e2af7376578eed9e864faf577e">
+        <dex dex="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\transforms\dex\debug\folders\1000\2\buzzboxSDK-0.6.5_44c4301bbf776cf909c4e2c53f011f6aecb00ffb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\openReduREST\build\intermediates\bundles\default\libs\httpmime-4.2.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c112297afe216aefe0afc3f9721623f478dbccab">
+        <dex dex="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\transforms\dex\debug\folders\1000\8\httpmime-4.2.5_07971a4b46146965d2a50fec1272eaf76f667823\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\openReduREST\build\intermediates\bundles\default\libs\httpcore-4.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5ea28685e2c113df06742ff5c72aa7f84c0047bd">
+        <dex dex="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\transforms\dex\debug\folders\1000\8\httpcore-4.2.4_fbaf773b79351ee134161fb2e4278d713f7b6ebc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\openReduMobileWebCachedImageView\build\intermediates\bundles\default\libs\disklrucache-1.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85171708866d171fee63551ebcea6c5a6ebdfee6">
+        <dex dex="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\transforms\dex\debug\folders\1000\8\disklrucache-1.3.1_e34d92702b621ce1f1ba13bb12c64c15cd0df32c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\openReduREST\build\intermediates\bundles\default\libs\scribe-1.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c9b55c2f9c296df4d88b3f80fe85bf7f7edabc7f">
+        <dex dex="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\transforms\dex\debug\folders\1000\8\scribe-1.3.2_cbe97f7229b8e74ad8a2b00e83a65c13ea6c47c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\renat\Desktop\mobile-master\project\mobile\OpenRedu\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8b8a3bb1179b0cba024aca439cbac6539fb07c51\classes.dex" />
+    </item>
+
+</items>
