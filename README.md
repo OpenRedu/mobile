@@ -1,4 +1,4 @@
-![alt tag] (https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/banner_pt.png)
+![alt tag](https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/banner_pt.png)
 
 Mas afinal, o que é OpenRedu?
 
@@ -35,11 +35,11 @@ Novas dependências(bibliotecas), devem ser adicionada via Maven através do Gra
 
 Exemplo:
 
-![alt tag] (https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/project_structure.png)
+![alt tag](https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/project_structure.png)
 
 ### Módulos
  ```
- ':app' = core da aplicaçaõ. Projeto principal
+ ':app' = core da aplicação. Projeto principal
 
  ':openReduMobileAndroidPushRefresh' = módulo(lib) para push refresh
 
@@ -97,14 +97,14 @@ dependencies {
 
 ### Configurações
 
-* faça o download(![alt tag] (https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/icon_donwload.png)) do projeto  ou realize o clone via ![alt tag] (https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/icon_clone_projet.png)    
+* faça o download(![alt tag](https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/icon_donwload.png)) do projeto  ou realize o clone via ![alt tag](https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/icon_clone_projet.png)    
 
 com seu ambiente configurado(Android Studio + SDK + Gradle):
 
 * Importe no Android Studio o projeto ***mobile/OpenRedu***.
 Exemplo:
 
-![alt tag] (https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/import_project.png)
+![alt tag](https://raw.githubusercontent.com/ThaisaMirely/mobile/master/images-for-readme/import_project.png)
 
 * Compile e execute o projeto para testar e iniciar o desenvolvimento.
 * Caso não tenha o [plugin do Findbugs](https://plugins.jetbrains.com/plugin/3847?pr=idea) instalado, deverá realizar esse passo.
@@ -117,6 +117,7 @@ Os passos para contribuir com a evolução do código, seja para resolução de 
 - Realizar mudanças ou adicionar a feature
 - Commitar mudanças e enviá-las para o remoto
 - Realizar **pull request**
+
 
 ### Qualidade de Código
 
@@ -152,21 +153,19 @@ Enquanto ele não está pronto, você pode seguir os padrões abaixo para garant
 O OpenRedu está presente nos seguintes sítios:
 
 - [Fórum](http://forum.openredu.com/)
-- [Perfil Software Livre Brasil] (http://softwarelivre.org/profile/openredu)
+- [Perfil Software Livre Brasil](http://softwarelivre.org/profile/openredu)
 - [Facebook](https://www.facebook.com/redesocialeducacional/)
 - [Youtube](https://www.youtube.com/user/openredu)
 - [Wikipédia](https://pt.wikipedia.org/wiki/Openredu)
 
 ## Licença
  ```
-									       GNU GENERAL PUBLIC LICENSE
-                             Version 2, June 1991
-
- Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>
- 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
- Everyone is permitted to copy and distribute verbatim copies
- of this license document, but changing it is not allowed.
-
+                GNU GENERAL PUBLIC LICENSE
+                    Version 2, June 1991
+Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
  ```
 
  :checkered_flag: Para informação completa acesse o arquivo LICENSE, na raiz do projeto.
